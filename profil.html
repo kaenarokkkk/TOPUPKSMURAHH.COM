@@ -1,28 +1,92 @@
 <html>
-    <head>
-      <link rel="stylesheet" href="x.css">
-<title>Kai store</title>
-     </head>
-     <body><br>
-      <img src="banner.jpg" width="100%">
-      <DIV class="MARK">
-      <h2><b>TOKO DIAMOND TERPERCAYA DI INDONESIA.MURAH AMAN DAN TERBAIK</b></h2>
-      </DIV>
-      <nav>
-      <ul>
-        <li><a href="home1.html">Home</a></li>
-        <li><a href="profil.html">Profil</a></li>
-        <li>
-          <a href="product.html">Produk</a>
-          <ul>
-            <li><a href="produk1.html">Satu</a></li>
-            <li><a href="produk2.html">Dua</a></li>
-            <li><a href="produk3.html">Tiga</a></li>
-          </ul>
-        </li>
-        <li><a href="order.html">Order</a></li>
-        <li><a href="service.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-   
+  <head>
+    <link rel="stylesheet" href="x.css">
+    <link rel="stylesheet" href="profil.css">
+    <title>Profil Kai Store</title>
+  </head>
+  <body>
+    <div class="bg-circles">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+      <div class="circle circle3"></div>
+      <div class="circle circle4"></div>
+      <div class="circle circle5"></div>
+      <div class="circle circle6"></div>
+      <div class="circle circle7"></div>
+      <div class="circle circle8"></div>
+    </div>
+    <br>
+    <div class="menu-toggle">
+      <input type="checkbox" id="menu-checkbox" hidden>
+      <label for="menu-checkbox" class="menu-icon">
+        <img src="Frame 1.png" alt="Menu" width="50px" style="cursor:pointer;">
+      </label>
+      <div class="dropdown-menu">
+        <a href="Home.html"><img src="home.png" width="30px"> Home</a>
+        <a href="contact.html"><img src="logoig.png" width="30px"> Contact</a>
+        <a href="profil.html"><img src="Frame 1.png" width="30px"> Profile</a>
+        <div class="dropdown-submenu">
+          <label for="order-submenu-checkbox" class="submenu-label">
+            <img src="listttt.png" width="30px"> Order ▼
+          </label>
+          <input type="checkbox" id="order-submenu-checkbox" hidden>
+          <div class="submenu-content">
+            <a href="orderpubg.html">Order PUBG</a>
+            <a href="orderff.html">Order Free Fire</a>
+            <a href="ordercodm.html">Order CODM</a>
+            <a href="ordercoc.html">Order COC</a>
+            <a href="orderhok.html">Order HOK</a>
+            <a href="ordercr.html">Order Clash Royale</a>
+            <a href="ordermlbb.html">Order MLBB</a>
+            <a href="orderroblox.html">Order Roblox</a>
+          </div>
+        </div>
+        <a href="service.html"><img src="cs.jpeg" width="30px"> Service</a>
+      </div>
+    </div>
+    <div class="profile-card">
+      <div class="profile-header">
+        <img src="Frame 1.png" alt="Logo Kai Store">
+        <div>
+          <h2>Kai Store</h2>
+          <p>Toko top up diamond game terpercaya, murah, aman, dan pelayanan cepat.</p>
+        </div>
+      </div>
+      <div class="profile-details">
+        <h3>Karakteristik Toko</h3>
+        <ul>
+          <li>✔️ Proses cepat & otomatis</li>
+          <li>✔️ Harga termurah & banyak promo</li>
+          <li>✔️ Support banyak game populer</li>
+          <li>✔️ Pelayanan ramah & responsif</li>
+          <li>✔️ Amanah & sudah dipercaya ribuan pelanggan</li>
+        </ul>
+      </div>
+      <div class="contact-info">
+        <h3>Kontak Toko</h3>
+        <p><img src="logoig.png" width="24px"> Instagram: <a href="https://instagram.com/kaistore" target="_blank">@kaistore</a></p>
+        <p><img src="logowa3.png" width="24px"> WhatsApp: <a href="https://wa.me/6281234567890" target="_blank">0812-3456-7890</a></p>
+        <p>Email: kaistore@email.com</p>
+        <p>Alamat: Jl. Topup No. 1, Indonesia</p>
+      </div>
+    </div>
+    <center>
+      <div class="contact-box">
+        <hr class="contact-hr">
+        <div class="contact-title">Hubungi Kami</div>
+      </div>
+      <a href="https://instagram.com/kaistore"><img class="ig" src="logoig.png" width="50px"></a>
+      <a href="https://wa.me/6281234567890"><img class="ig" src="logowa3.png" width="50px"></a>
+    </center>
+    <script>
+      window.addEventListener('scroll', function() {
+        const menu = document.querySelector('.menu-toggle');
+        if(window.scrollY > 10){
+          menu.classList.add('scrolled');
+        } else {
+          menu.classList.remove('scrolled');
+        }
+      });
+    </script>
+  </body>
 </html>
