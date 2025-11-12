@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Layanan - Kai Store</title>
+    <link rel="stylesheet" href="x.css">
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+  <div class="bg-circles">
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+    <div class="circle circle4"></div>
+    <div class="circle circle5"></div>
+    <div class="circle circle6"></div>
+    <div class="circle circle7"></div>
+    <div class="circle circle8"></div>
+  </div>
+
+  <!-- menu toggle (sama seperti Home) -->
+  <div class="menu-toggle">
+    <input type="checkbox" id="menu-checkbox" hidden>
+    <label for="menu-checkbox" class="menu-icon">
+      <img src="Frame 1.png" alt="Menu" width="50px">
+    </label>
+    <div class="dropdown-menu">
+      <a href="Home.html"><img src="home.png" width="30px"> Home</a>
+      <a href="contact.html"><img src="logoig.png" width="30px"> Contact</a>
+      <a href="profil.html"><img src="Frame 1.png" width="30px"> Profile</a>
+      <a href="services.html"><img src="cs.jpeg" width="30px"> Services</a>
+    </div>
+  </div>
+
+  <!-- Konten layanan -->
+  <section class="services-container" aria-labelledby="services-title">
+    <h1 id="services-title" class="services-title">Layanan yang Kami Rekomendasikan</h1>
+    <p class="services-sub">Solusi terverifikasi & partner terpercaya untuk internet, audio, dan board development — rekomendasi profesional.</p>
+
+    <div class="service-grid">
+      <!-- X Net -->
+      <article class="service-card">
+        <div class="card-badge badge-primary">Internet</div>
+        <img src="xnet-logo.png" alt="X Net" class="service-logo">
+        <h3 class="service-name">X Net</h3>
+        <p class="service-desc">Penyedia internet fiber & dedicated untuk gaming, streaming, dan bisnis. Stabilitas tinggi & SLA profesional.</p>
+        <ul class="service-features">
+          <li>Fiber 100Mbps - 1Gbps</li>
+          <li>Low-latency untuk gaming</li>
+          <li>Support 24/7 & SLA</li>
+        </ul>
+        <div class="card-ctas">
+          <a class="btn btn-visit" href="https://xnet.example" target="_blank" rel="noopener">Kunjungi X Net</a>
+          <a class="btn btn-wa" href="https://wa.me/628112345670" target="_blank" rel="noopener">
+            <img src="logowa3.png" width="18" alt="WA"> Hubungi via WhatsApp
+          </a>
+        </div>
+      </article>
+
+      <!-- Speaker Store -->
+      <article class="service-card">
+        <div class="card-badge badge-accent">Audio</div>
+        <img src="speakerstore-logo.png" alt="Speaker Store" class="service-logo">
+        <h3 class="service-name">Speaker Store</h3>
+        <p class="service-desc">Katalog speaker aktif & pasif untuk studio, event, dan home theater. Kurasi kualitas & garansi resmi.</p>
+        <ul class="service-features">
+          <li>Speaker pro & consumer</li>
+          <li>Pilihan package PA system</li>
+          <li>Setup & tuning profesional</li>
+        </ul>
+        <div class="card-ctas">
+          <a class="btn btn-visit" href="https://speakerstore.example" target="_blank" rel="noopener">Lihat Koleksi</a>
+          <a class="btn btn-wa" href="https://wa.me/628122345671" target="_blank" rel="noopener">
+            <img src="logowa3.png" width="18" alt="WA"> Tanya Stok
+          </a>
+        </div>
+      </article>
+
+      <!-- Arduino R3 -->
+      <article class="service-card">
+        <div class="card-badge badge-tech">Hardware</div>
+        <img src="arduino-r3.png" alt="Arduino R3" class="service-logo">
+        <h3 class="service-name">Arduino R3 (Partner)</h3>
+        <p class="service-desc">Module & board Arduino R3 untuk prototyping, IoT, dan edukasi. Kit, sensor, serta tutorial turun tangan.</p>
+        <ul class="service-features">
+          <li>Starter kit & sensor</li>
+          <li>Project-ready tutorials</li>
+          <li>Support integrasi IoT</li>
+        </ul>
+        <div class="card-ctas">
+          <a class="btn btn-visit" href="https://arduino-r3.example" target="_blank" rel="noopener">Kunjungi Arduino R3</a>
+          <a class="btn btn-wa" href="https://wa.me/628133345672" target="_blank" rel="noopener">
+            <img src="logowa3.png" width="18" alt="WA"> Order / Konsultasi
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <footer class="services-note">
+      <p>Semua penyedia di atas adalah partner yang kami seleksi berdasarkan stabilitas layanan dan kepuasan pengguna. Klik tombol untuk verifikasi & komunikasi cepat.</p>
+    </footer>
+  </section>
+
+  <center style="z-index:2;position:relative;">
+    <div class="contact-box">
+      <hr class="contact-hr">
+      <div class="contact-title">Hubungi Kami</div>
+    </div>
+    <a href="https://instagram.com/kaistore"><img class="ig" src="logoig.png" width="50px"></a>
+    <a href="https://wa.me/6281234567890"><img class="ig" src="logowa3.png" width="50px"></a>
+  </center>
+
+  <script>
+    window.addEventListener('scroll', function(){
+      const menu = document.querySelector('.menu-toggle');
+      if(window.scrollY > 10) menu.classList.add('scrolled'); else menu.classList.remove('scrolled');
+    });
+  </script>
+</body>
+</html>
