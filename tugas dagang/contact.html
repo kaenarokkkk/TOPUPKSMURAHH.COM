@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="x.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Person Kai Store</title>
+  </head>
+  <body>
+    <div class="bg-circles">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+      <div class="circle circle3"></div>
+      <div class="circle circle4"></div>
+      <div class="circle circle5"></div>
+      <div class="circle circle6"></div>
+      <div class="circle circle7"></div>
+      <div class="circle circle8"></div>
+    </div>
+    <br>
+    <div class="menu-toggle">
+      <input type="checkbox" id="menu-checkbox" hidden>
+      <label for="menu-checkbox" class="menu-icon">
+        <img src="Frame 1.png" alt="Menu" width="50px" style="cursor:pointer;">
+      </label>
+      <div class="dropdown-menu">
+        <a href="home1.html"><img src="home.png" width="30px"> Home</a>
+        <a href="contact.html"><img src="logoig.png" width="30px"> Contact</a>
+        <a href="profil.html"><img src="Frame 1.png" width="30px"> Profile</a>
+        <div class="dropdown-submenu">
+          <label for="order-submenu-checkbox" class="submenu-label">
+            <img src="listttt.png" width="30px"> Order ▼
+          </label>
+          <input type="checkbox" id="order-submenu-checkbox" hidden>
+          <div class="submenu-content">
+            <a href="orderpubg.html">Order PUBG</a>
+            <a href="orderff.html">Order Free Fire</a>
+            <a href="ordercodm.html">Order CODM</a>
+            <a href="ordercoc.html">Order COC</a>
+            <a href="orderhok.html">Order HOK</a>
+            <a href="ordercr.html">Order Clash Royale</a>
+            <a href="ordermlbb.html">Order MLBB</a>
+            <a href="orderroblox.html">Order Roblox</a>
+          </div>
+        </div>
+        <a href="service.html"><img src="cs.jpeg" width="30px"> Service</a>
+      </div>
+    </div>
+    <div class="contact-admin-container">
+      <h2 class="contact-title-main">Contact Person Admin Kai Store</h2>
+      <div class="admin-grid">
+        <div class="admin-card">
+          <img src="admin1.jpg" alt="Admin 1" class="admin-photo">
+          <div class="admin-info">
+            <h3>Admin Raka</h3>
+            <p>Fast Response & Ramah</p>
+            <a href="https://wa.me/6281234567890" target="_blank" class="wa-link">
+              <img src="logowa3.png" width="24px"> 0812-3456-7890
+            </a>
+          </div>
+        </div>
+        <div class="admin-card">
+          <img src="admin2.jpg" alt="Admin 2" class="admin-photo">
+          <div class="admin-info">
+            <h3>Admin Sinta</h3>
+            <p>Siap bantu 24 jam</p>
+            <a href="https://wa.me/6282234567891" target="_blank" class="wa-link">
+              <img src="logowa3.png" width="24px"> 0822-3456-7891
+            </a>
+          </div>
+        </div>
+        <div class="admin-card">
+          <img src="admin3.jpg" alt="Admin 3" class="admin-photo">
+          <div class="admin-info">
+            <h3>Admin Dimas</h3>
+            <p>Topup & Komplain</p>
+            <a href="https://wa.me/6283234567892" target="_blank" class="wa-link">
+              <img src="logowa3.png" width="24px"> 0832-3456-7892
+            </a>
+          </div>
+        </div>
+        <div class="admin-card">
+          <img src="admin4.jpg" alt="Admin 4" class="admin-photo">
+          <div class="admin-info">
+            <h3>Admin Vina</h3>
+            <p>Info Promo & Event</p>
+            <a href="https://wa.me/6284234567893" target="_blank" class="wa-link">
+              <img src="logowa3.png" width="24px"> 0842-3456-7893
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <center>
+      <div class="contact-box">
+        <hr class="contact-hr">
+        <div class="contact-title">Hubungi Kami</div>
+      </div>
+      <a href="https://instagram.com/kaistore"><img class="ig" src="logoig.png" width="50px"></a>
+      <a href="https://wa.me/6281234567890"><img class="ig" src="logowa3.png" width="50px"></a>
+    </center>
+    <script>
+      window.addEventListener('scroll', function() {
+        const menu = document.querySelector('.menu-toggle');
+        if(window.scrollY > 10){
+          menu.classList.add('scrolled');
+        } else {
+          menu.classList.remove('scrolled');
+        }
+      });
+    </script>
+  </body>
+</html>
